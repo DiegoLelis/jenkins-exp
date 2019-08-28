@@ -1,0 +1,89 @@
+Running from: /usr/share/jenkins/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Aug 28, 2019 12:03:17 PM winstone.Logger logInternal
+WARNING: Parameter handlerCountMax is now deprecated
+Aug 28, 2019 12:03:17 PM org.eclipse.jetty.util.log.Log initialized
+INFO: Logging initialized @338ms to org.eclipse.jetty.util.log.JavaUtilLog
+Aug 28, 2019 12:03:17 PM winstone.Logger logInternal
+INFO: Beginning extraction from war file
+Aug 28, 2019 12:03:18 PM org.eclipse.jetty.server.handler.ContextHandler setContextPath
+WARNING: Empty contextPath
+Aug 28, 2019 12:03:18 PM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.4.z-SNAPSHOT; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 1.8.0_212-8u212-b01-1~deb9u1-b01
+Aug 28, 2019 12:03:19 PM org.eclipse.jetty.webapp.StandardDescriptorProcessor visitServlet
+INFO: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+Aug 28, 2019 12:03:19 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: DefaultSessionIdManager workerName=node0
+Aug 28, 2019 12:03:19 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: No SessionScavenger set, using defaults
+Aug 28, 2019 12:03:19 PM org.eclipse.jetty.server.session.HouseKeeper startScavenging
+INFO: node0 Scavenging every 600000ms
+Jenkins home directory: /var/jenkins_home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Aug 28, 2019 12:03:19 PM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started w.@6063d80a{Jenkins v2.176,/,file:///var/jenkins_home/war/,AVAILABLE}{/var/jenkins_home/war}
+Aug 28, 2019 12:03:19 PM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@307765b4{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+Aug 28, 2019 12:03:19 PM org.eclipse.jetty.server.Server doStart
+INFO: Started @2300ms
+Aug 28, 2019 12:03:19 PM winstone.Logger logInternal
+INFO: Winstone Servlet Engine v4.0 running: controlPort=disabled
+Aug 28, 2019 12:03:21 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Aug 28, 2019 12:03:21 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Aug 28, 2019 12:03:22 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Aug 28, 2019 12:03:22 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Aug 28, 2019 12:03:22 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Aug 28, 2019 12:03:23 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Aug 28, 2019 12:03:23 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Started Download metadata
+Aug 28, 2019 12:03:23 PM hudson.util.Retrier start
+INFO: Attempt #1 to do the action check updates server
+Aug 28, 2019 12:03:24 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@70c82f73: display name [Root WebApplicationContext]; startup date [Wed Aug 28 12:03:24 UTC 2019]; root of context hierarchy
+Aug 28, 2019 12:03:24 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@70c82f73]: org.springframework.beans.factory.support.DefaultListableBeanFactory@ec0976a
+Aug 28, 2019 12:03:24 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ec0976a: defining beans [authenticationManager]; root of factory hierarchy
+Aug 28, 2019 12:03:24 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@560b5125: display name [Root WebApplicationContext]; startup date [Wed Aug 28 12:03:24 UTC 2019]; root of context hierarchy
+Aug 28, 2019 12:03:24 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@560b5125]: org.springframework.beans.factory.support.DefaultListableBeanFactory@46986d75
+Aug 28, 2019 12:03:24 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@46986d75: defining beans [filter,legacy]; root of factory hierarchy
+Aug 28, 2019 12:03:24 PM jenkins.install.SetupWizard init
+INFO: 
+
+*************************************************************
+*************************************************************
+*************************************************************
+
+Jenkins initial setup is required. An admin user has been created and a password generated.
+Please use the following password to proceed to installation:
+
+ec8f0b59abc1462aba084efb73e00e1b
+
+This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
+
+*************************************************************
+*************************************************************
+*************************************************************
+
+Aug 28, 2019 12:03:29 PM hudson.model.UpdateSite updateData
+INFO: Obtained the latest update center data file for UpdateSource default
+Aug 28, 2019 12:03:30 PM hudson.model.DownloadService$Downloadable load
+INFO: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+Aug 28, 2019 12:03:30 PM hudson.util.Retrier start
+INFO: Performed the action check updates server successfully at the attempt #1
+Aug 28, 2019 12:03:30 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Finished Download metadata. 6,664 ms
+Aug 28, 2019 12:03:30 PM hudson.model.UpdateSite updateData
+INFO: Obtained the latest update center data file for UpdateSource default
+Aug 28, 2019 12:03:30 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Aug 28, 2019 12:03:30 PM hudson.WebAppMain$3 run
+INFO: Jenkins is fully up and running

@@ -1,0 +1,21 @@
+
+version: '3'
+services:
+  master:
+    build: ./jenkins-master
+    container_name: "jenkins-master"
+    ports:
+      - "50000:50000"
+      - "8085:8080"
+    volumes:
+      - jenkins-log:/var/log/jenkins
+      - jenkins-data:/var/jenkins_home
+    networks:
+      - jenkins-net
+    # volumes:
+    #   - /var/run/docker.sock:/var/run/docker.sock # To run docker on host
+volumes:
+  jenkins-data:
+  jenkins-log:
+networks:
+  jenkins-net:
